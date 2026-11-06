@@ -4,6 +4,8 @@ This repository accompanies the NeurIPS 2026 paper **Reasoning over Coupled Rece
 
 **Authors:** Jing Yang, Bo Wen, Yuan Gao, Xiaowen Jiang, Zhihao Zhang, and Shikun Yan.
 
+![CoRF conference poster](assets/corf-poster.png)
+
 ## Overview
 
 Conditional message-passing methods often extract a separate local subgraph for each query. These subgraphs can overlap substantially, leading to repeated access and processing of the same graph structures. CoRF addresses this redundancy by constructing reusable receptive supports that allow multiple training queries to share local structures.
@@ -12,7 +14,7 @@ CoRF combines receptive support construction with boundary padding and residual 
 
 ## Code availability
 
-The implementation is being prepared for release. Installation instructions, dataset preparation, training and evaluation commands, and experiment configurations will be added with the code.
+The repository currently includes [`partition_utils.py`](ultra/supports/partitioning/partition_utils.py), the partitioning dispatcher used to select and coordinate graph partitioning methods. The CoRF-specific implementation and other imported `ultra` modules are not yet included, so this file cannot run on its own and the current release does not reproduce the experiments. The remaining implementation, dataset preparation, configurations, and instructions are being prepared for release.
 
 ## Citation
 

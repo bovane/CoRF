@@ -14,7 +14,7 @@ CoRF combines receptive support construction with boundary padding and residual 
 
 ## Code availability
 
-The repository currently includes [`partition_utils.py`](ultra/supports/partitioning/partition_utils.py), the partitioning dispatcher used to select and coordinate graph partitioning methods. The CoRF-specific implementation and other imported `ultra` modules are not yet included, so this file cannot run on its own and the current release does not reproduce the experiments. The remaining implementation, dataset preparation, configurations, and instructions are being prepared for release.
+The repository currently includes [`partition_utils.py`](partition_utils.py), a partitioning dispatcher used to select and coordinate graph partitioning methods. Additional implementation files, dataset preparation, configurations, and usage instructions are being prepared for release.
 
 ## Citation
 
